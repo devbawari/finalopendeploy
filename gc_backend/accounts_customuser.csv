@@ -1,0 +1,36 @@
+username,password,last_login,is_superuser,first_name,last_name,email,is_staff,is_active,date_joined,company_id,role,post,department,phone,profile_pic
+EMP0009,12345678,26-10-2023 13:12,FALSE,Justin,Lowery,justin@deloitte.com,TRUE,TRUE,31-08-2023,EMP0009,employee,DevOps Engineer,Engineering,4544183344,https://randomuser.me/api/portraits/men/88.jpg
+EMP0012,12345678,23-04-2023 20:52,FALSE,Andrew,Sanders,andrew@deloitte.com,TRUE,TRUE,07-03-2023,EMP0012,employee,Product Manager,Research,7151129245,https://randomuser.me/api/portraits/women/78.jpg
+EMP0040,12345678,28-01-2025 17:16,FALSE,Wanda,Ruiz,wanda@deloitte.com,TRUE,TRUE,10-02-2023,EMP0040,employee,Senior Software Engineer,Infrastructure,3539835887,https://randomuser.me/api/portraits/women/21.jpg
+EMP0056,12345678,30-05-2024 07:12,FALSE,Danielle,Cunningham,danielle@deloitte.com,TRUE,TRUE,18-02-2024,EMP0056,employee,Senior Software Engineer,Infrastructure,1203717180,https://randomuser.me/api/portraits/women/7.jpg
+EMP0071,12345678,31-08-2023 02:16,FALSE,Brian,Sandoval,brian@deloitte.com,TRUE,TRUE,01-07-2023,EMP0071,employee,DevOps Engineer,Product Management,5622144276,https://randomuser.me/api/portraits/women/9.jpg
+EMP0108,12345678,15-12-2023 19:59,FALSE,Raymond,Jones,raymond@deloitte.com,TRUE,TRUE,13-05-2023,EMP0108,employee,Software Engineer,Product Management,8284125181,https://randomuser.me/api/portraits/men/84.jpg
+EMP0130,12345678,10-07-2024 17:31,FALSE,Christine,Carrillo,christine@deloitte.com,TRUE,TRUE,14-08-2023,EMP0130,employee,Data Scientist,Engineering,4332676739,https://randomuser.me/api/portraits/women/90.jpg
+EMP0133,12345678,14-10-2024 00:37,FALSE,Michael,Cruz,michael@deloitte.com,TRUE,TRUE,18-10-2023,EMP0133,employee,Data Scientist,Data Science,6716112282,https://randomuser.me/api/portraits/men/17.jpg
+EMP0136,12345678,02-11-2024 07:41,FALSE,John,Roberts,john@deloitte.com,TRUE,TRUE,08-10-2023,EMP0136,employee,UX Designer,Product Management,2106044489,https://randomuser.me/api/portraits/women/35.jpg
+EMP0173,12345678,18-08-2024 18:30,FALSE,William,Dixon,william@deloitte.com,TRUE,TRUE,11-02-2024,EMP0173,employee,Product Manager,Infrastructure,9757465143,https://randomuser.me/api/portraits/men/80.jpg
+EMP0184,12345678,23-08-2023 07:14,FALSE,Brian,Harris,brian@deloitte.com,TRUE,TRUE,25-06-2023,EMP0184,employee,Product Manager,Data Science,9739043618,https://randomuser.me/api/portraits/men/3.jpg
+EMP0194,12345678,23-01-2025 10:14,FALSE,Larry,Schmitt,larry@deloitte.com,TRUE,TRUE,29-06-2023,EMP0194,employee,Data Scientist,Infrastructure,4956829423,https://randomuser.me/api/portraits/women/56.jpg
+EMP0202,12345678,06-01-2025 07:08,FALSE,Elizabeth,Scott,elizabeth@deloitte.com,TRUE,TRUE,23-07-2023,EMP0202,employee,Product Manager,Product Management,4512662046,https://randomuser.me/api/portraits/women/64.jpg
+EMP0228,12345678,07-04-2024 18:12,FALSE,Max,Lee,max@deloitte.com,TRUE,TRUE,05-02-2023,EMP0228,employee,DevOps Engineer,Data Science,8282190337,https://randomuser.me/api/portraits/women/66.jpg
+EMP0262,12345678,15-05-2024 08:06,FALSE,Ashley,Lawson,ashley@deloitte.com,TRUE,TRUE,05-01-2023,EMP0262,employee,Product Manager,Research,171497765,https://randomuser.me/api/portraits/men/13.jpg
+EMP0285,12345678,22-01-2025 00:10,FALSE,Phillip,Phelps,phillip@deloitte.com,TRUE,TRUE,02-03-2023,EMP0285,employee,Data Scientist,Design,2277093255,https://randomuser.me/api/portraits/men/18.jpg
+EMP0338,12345678,13-12-2024 22:55,FALSE,Amanda,White,amanda@deloitte.com,TRUE,TRUE,17-03-2023,EMP0338,employee,Data Scientist,Product Management,1875699367,https://randomuser.me/api/portraits/women/17.jpg
+EMP0345,12345678,27-07-2024 12:55,FALSE,Kimberly,Baker,kimberly@deloitte.com,TRUE,TRUE,06-04-2023,EMP0345,employee,UX Designer,Product Management,3207560984,https://randomuser.me/api/portraits/women/89.jpg
+EMP0350,12345678,24-07-2024 17:24,FALSE,Samantha,Page,samantha@deloitte.com,TRUE,TRUE,21-05-2023,EMP0350,employee,Product Manager,Product Management,9258952580,https://randomuser.me/api/portraits/men/46.jpg
+EMP0355,12345678,28-01-2023 10:30,FALSE,Kimberly,Zamora,kimberly@deloitte.com,TRUE,TRUE,07-01-2023,EMP0355,employee,Software Engineer,Infrastructure,6306369498,https://randomuser.me/api/portraits/women/81.jpg
+EMP0356,12345678,22-07-2024 14:13,FALSE,Ariel,Chase,ariel@deloitte.com,TRUE,TRUE,09-05-2023,EMP0356,employee,DevOps Engineer,Product Management,9209188150,https://randomuser.me/api/portraits/women/72.jpg
+EMP0362,12345678,24-12-2024 18:38,FALSE,Veronica,Padilla,veronica@deloitte.com,TRUE,TRUE,27-08-2023,EMP0362,employee,UX Designer,Infrastructure,3668294565,https://randomuser.me/api/portraits/women/57.jpg
+EMP0377,12345678,22-12-2023 10:52,FALSE,Joan,Wheeler,joan@deloitte.com,TRUE,TRUE,20-06-2023,EMP0377,employee,Senior Software Engineer,Infrastructure,2572160923,https://randomuser.me/api/portraits/men/31.jpg
+EMP0384,12345678,28-09-2023 02:41,FALSE,Regina,Lane,regina@deloitte.com,TRUE,TRUE,29-08-2023,EMP0384,employee,UX Designer,Design,1032459325,https://randomuser.me/api/portraits/men/80.jpg
+EMP0392,12345678,23-02-2025 09:22,FALSE,Scott,Baker,scott@deloitte.com,TRUE,TRUE,01-01-2024,EMP0392,employee,DevOps Engineer,Design,7030088876,https://randomuser.me/api/portraits/men/58.jpg
+EMP0403,12345678,05-12-2024 08:22,FALSE,Thomas,Barton,thomas@deloitte.com,TRUE,TRUE,07-01-2024,EMP0403,employee,Senior Software Engineer,Design,3194717434,https://randomuser.me/api/portraits/women/33.jpg
+EMP0418,12345678,13-12-2024 00:36,FALSE,Kimberly,Martinez,kimberly@deloitte.com,TRUE,TRUE,19-12-2023,EMP0418,employee,Data Scientist,Design,5713649877,https://randomuser.me/api/portraits/women/64.jpg
+EMP0445,12345678,05-09-2024 09:10,FALSE,William,Morgan,william@deloitte.com,TRUE,TRUE,15-01-2023,EMP0445,employee,UX Designer,Engineering,7468984475,https://randomuser.me/api/portraits/men/83.jpg
+EMP0447,12345678,07-01-2025 15:20,FALSE,Francisco,Tran,francisco@deloitte.com,TRUE,TRUE,26-01-2023,EMP0447,employee,Senior Software Engineer,Research,5267581383,https://randomuser.me/api/portraits/women/46.jpg
+EMP0458,12345678,22-07-2024 02:55,FALSE,Kelsey,Jones,kelsey@deloitte.com,TRUE,TRUE,28-05-2023,EMP0458,employee,Product Manager,Engineering,2185828393,https://randomuser.me/api/portraits/women/36.jpg
+EMP0463,12345678,03-09-2024 02:51,FALSE,Matthew,Peterson,matthew@deloitte.com,TRUE,TRUE,28-10-2023,EMP0463,employee,Product Manager,Research,517565675,https://randomuser.me/api/portraits/men/89.jpg
+EMP0479,12345678,05-04-2024 21:58,FALSE,Lisa,Cruz,lisa@deloitte.com,TRUE,TRUE,22-04-2023,EMP0479,employee,Software Engineer,Product Management,9023089575,https://randomuser.me/api/portraits/men/6.jpg
+EMP0501,12345678,26-10-2023 13:12,FALSE,Jake,Lowery,jake@deloitte.com,TRUE,TRUE,31-08-2023,EMP0501,admin,DevOps Engineer,Engineering,4544183343,https://randomuser.me/api/portraits/men/88.jpg
+EMP0502,12345678,23-04-2023 20:52,FALSE,William,Sanders,william@deloitte.com,TRUE,TRUE,07-03-2023,EMP0502,admin,Product Manager,Research,7151129246,https://randomuser.me/api/portraits/women/78.jpg
+EMP0503,12345678,28-01-2025 17:16,FALSE,Jonathan,Ruiz,jonathan@deloitte.com,TRUE,TRUE,10-02-2023,EMP0503,admin,Senior Software Engineer,Infrastructure,3539835888,https://randomuser.me/api/portraits/women/21.jpg

@@ -77,11 +77,13 @@ WSGI_APPLICATION = 'gc_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default="postgresql://opensoftdata_user:WU5YC7TJuN5gJHqUTkb9rCz43BPaCQpv@dpg-cvklai0gjchc73ce53cg-a.oregon-postgres.render.com/opensoftdata",
+        conn_max_age=600,  # Keep connections open for performance
+    )
 }
 
 
