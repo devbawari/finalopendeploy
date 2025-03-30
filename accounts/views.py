@@ -4,6 +4,8 @@ from rest_framework import status,permissions
 from django.shortcuts import get_object_or_404
 from .serializers import LoginSerializer
 from django.contrib.auth import authenticate
+from django.http import HttpResponse
+from django.core.mail import send_mail
 
 from .models import CustomUser
 from .serializers import EmployeeSerializer, EmployeeDetailSerializer
@@ -45,3 +47,8 @@ class EmployeeDetailView(APIView):
         employee = get_object_or_404(CustomUser, id=employee_id, role='employee', company_id=admin.company_id)
         data = EmployeeDetailSerializer(employee).data
         return Response(data, status=status.HTTP_200_OK)
+
+def simple_email(request):
+    
+    send_mail(subject='Test Email',message='you required attention',recipient_list=['test@mail.com'],from_email=['devbawari4@gmail.com'])
+    return HttpResponse('Email sent successfully')

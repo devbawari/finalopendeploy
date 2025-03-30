@@ -94,7 +94,14 @@ DATABASES = {
     }
 }
 
+# Looking to send emails in production? Check out our Email API/SMTP product!
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For development only
 
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'd0bc80efeaac33'
+EMAIL_HOST_PASSWORD = '5f95971620b71d'
+EMAIL_PORT = '2525'
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
