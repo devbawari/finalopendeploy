@@ -11,8 +11,8 @@ env/
 Pipfile.lock
 
 # Django migrations (if you want to exclude them)
-**/migrations/**  # Uncomment if you want to ignore migrations
-!**/migrations/__init__.py  # But keep __init__.py
+migrations  # Uncomment if you want to ignore migrations
+migrations/__init__.py  # But keep __init__.py
 
 # Database
 *.sqlite3

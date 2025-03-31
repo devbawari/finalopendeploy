@@ -5,7 +5,14 @@ from django.shortcuts import get_object_or_404
 from .serializers import LoginSerializer
 from django.contrib.auth import authenticate
 from django.http import HttpResponse
+from django.conf import settings
 from django.core.mail import send_mail
+from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import send_mail
+from django.http import JsonResponse
+import json
+from .models import Employeeneedscare
+
 
 from .models import CustomUser
 from .serializers import EmployeeSerializer, EmployeeDetailSerializer
@@ -48,7 +55,58 @@ class EmployeeDetailView(APIView):
         data = EmployeeDetailSerializer(employee).data
         return Response(data, status=status.HTTP_200_OK)
 
-def simple_email(request):
+
+
+@csrf_exempt
+def send_healthcare_email(request):
+    if request.method == "POST":
+        try:
+            data = json.loads(request.body)
+            recipient_email = data.get("recipient_email")
+            
+            if not recipient_email:
+                return JsonResponse({"error": "Recipient email is required"}, status=400)
+
+            send_mail(
+                subject="Attention",
+                message="Healthcare is needed,please contact the hr",
+                from_email="devbawari4@example.com",
+                recipient_list=[recipient_email]
+            )
+
+            return JsonResponse({"message": f"Email successfully sent to {recipient_email}"}, status=200)
+        
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
+    else:
+        return JsonResponse({"error": "Invalid request method"}, status=405)
+
+
+@csrf_exempt  # Remove this in production and use CSRF token
+def send_emails_to_needy_employees(request):
+    if request.method == "POST":
+        needy_employees = Employeeneedscare.objects.filter(needs_attention=True)
+
+        if not needy_employees.exists():
+            return JsonResponse({"message": "No employees need attention"}, status=200)
+
+        failed_emails = []
+        
+        for employee in needy_employees:
+            try:
+                send_mail(
+                    subject="Attention",
+                    message="Healthcare is needed",
+                    from_email="devbawari4@example.com",
+                    recipient_list=[employee.email]
+                )
+            except Exception as e:
+                failed_emails.append(employee.email)
+
+       
+        return JsonResponse({
+            "message": f"Emails sent successfully to {needy_employees.count()} employees.",
+            "failed_emails": failed_emails
+        }, status=200)
     
-    send_mail(subject='Test Email',message='you required attention',recipient_list=['test@mail.com'],from_email=['devbawari4@gmail.com'])
-    return HttpResponse('Email sent successfully')
+    return JsonResponse({"error": "Invalid request method"}, status=405)

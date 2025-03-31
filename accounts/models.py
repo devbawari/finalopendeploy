@@ -16,3 +16,11 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return f"{self.username} - {self.role} (Company: {self.company_id})"
+
+class Employeeneedscare(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField(unique=True)
+    needs_attention = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.name} ({'Needs Attention' if self.needs_attention else 'Normal'})"
