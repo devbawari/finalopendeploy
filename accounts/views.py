@@ -12,6 +12,7 @@ from django.core.mail import send_mail
 from django.http import JsonResponse
 import json
 from .models import Employeeneedscare
+import random   
 
 
 from .models import CustomUser
@@ -38,12 +39,29 @@ class AdminDashboardView(APIView):
     def get(self, request, id):
         admin = get_object_or_404(CustomUser, id=id, role='admin')
 
-        if not admin:
-            return Response({"error": "Admin not found"}, status=status.HTTP_404_NOT_FOUND)
-
         employees = CustomUser.objects.filter(role='employee')
-        data = EmployeeSerializer(employees, many=True).data
-        return Response({'employees': data}, status=status.HTTP_200_OK)
+        serialized_data = EmployeeSerializer(employees, many=True).data
+
+        # Possible moods and activity levels
+        moods = ["Happy", "Neutral", "Sad", "Angry", "Depressed"]
+        activity_levels = ["Highly Active", "Moderately Active", "Low Activity"]
+
+        enhanced_data = []
+        for employee in employees:
+            enhanced_data.append({
+                "id": employee.id,
+                "name": employee.username,
+                "email": employee.email,
+                "reward_points": random.randint(50, 500),  # Example: Randomized reward points
+                "average_working_hours": round(random.uniform(6, 10), 1),  # Example: Random hours
+                "leaves_taken": random.randint(0, 20),  # Example: Random leave count
+                "activity": random.choice(activity_levels),
+                "performance": random.choice(["Excellent", "Good", "Needs Improvement"]),
+                "mood": random.choice(moods),
+                "original_data": EmployeeSerializer(employee).data  # Include original data
+            })
+
+        return Response({'employees': enhanced_data}, status=status.HTTP_200_OK)
 
 class EmployeeDetailView(APIView):
     """Returns details of a specific employee"""
