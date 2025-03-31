@@ -9,3 +9,5 @@ psycopg2==2.9.9
 faker==16.0.0
 pandas
 numpy
+asyncio
+mistralai
